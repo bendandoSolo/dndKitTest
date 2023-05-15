@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { GettingStarted2 } from './components/EventListener/GettingStarted2';
+import GettingStarted from './components/GettingStarted';
+import { GettingStarted3 } from './components/MultipleContainers/GettingStarted3';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+       <GettingStarted />  
+       <br />
+       
+       <div className='divider'/>
+       <GettingStarted2 />
+
+       <div className='divider'/>
+       <GettingStarted3 />
+      {/* <header className="App-header">
+          <h2>Getting Started with DndKit</h2>
+         
+      </header> */}
+    
+
     </div>
   );
 }
